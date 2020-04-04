@@ -1,0 +1,213 @@
+ /* ----------------------------------------------- */
+/* Configurações Básicas */
+/* ----------------------------------------------- */
+
+/*Zerando bordas para ter maior domínio sobre os box*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/dog.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 66vh;
+}
+
+html {
+    background-color: #fff; /*Define a cor do fundo*/
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif; /*a terceira opção é qualquer fonte daquela família, note que o nome da família não esta entre aspas.*/
+    font-weight: 300; /*de acordo com a fonte que importamos*/
+    font-size: 20px;
+    text-rendering: optimizeLegibility; /*otimiza a renderização da fonte para letura, tendo uma melhor qualidade*/
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 160%;
+    word-spacing: 2px;
+    text-align: center; /*Centralizando o texto*/
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #DAA520;
+    content: " "; /*Conteúdo do item*/
+    width: 100px; /*Comprimento do item*/
+    margin: 0 auto; /*Centralizar*/
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1000px; /*verificar se esse valor é adequado para seu monitor*/
+    top: 40%;
+    left: 50%;
+    transform: translate(-75%, -25%);
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.btn-full {
+    background-color: #DAA520;
+    border: 1px solid #DAA520;
+    color: #fff;
+}
+
+.btn-ghost {
+    border: 1px solid #DAA520;
+    color: #DAA520;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 3px;
+    color: #fff;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited  {
+    background-color: #DAA520;
+    border: 1px solid #DAA520;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited  {
+    border: 1px solid #DAA520;
+    color: #DAA520;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #DAA520;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #B8860B;
+    background-color: #B8860B
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #DAA520;
+    color: #fff;
+}
+
+.logo {
+    background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    border-radius: 20px;
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-left: -180px;
+    margin-top: 20px; /*colocar um espaçamento acima da logo para baixar ela*/
+}
+.paw {
+    float: left;
+    margin-left: -17%;
+    margin-top: 20px;
+}
+
+ion-icon {
+    font-size: 350%; /*Tamanho do ícone*/
+    display: block;
+    color: #DAA520; /*cor da fonte = cor do ícone*/
+    margin-bottom: 10px; /*espaço entre o ícone e o título do feature*/
+}
+
+.main-nav {
+    float: right;
+    list-style: none; /*Se livra dos bullets - bolinhas pretas - marcadores*/
+    margin-top: 20px; /*colocar um espaçamento acima da lista para baixar ela*/
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 50px; /*espaçamento entre os items da lista*/
+}
+
+.main-nav li a {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #DAA520;
+}
+
+section {
+    padding: 80px 0;
+  }
+
+  .long-copy {
+    line-height:145%;
+    width: 100%; /*ocupa 70%, sobra 30%*/
+    margin-left: 0%; /*15% para cada lado*/
+}
+
+.box {
+    padding: 1%; /*dá um pequeno espaçamento entre o conteúdo e o container.*/
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 200%;
+}
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
