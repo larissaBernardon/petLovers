@@ -277,8 +277,8 @@ section {
 }
 
 .step div {
-    color: #e67e22; /*Define cor da fonte*/
-    border: 2px solid #e67e22; /*define uma borda laranja*/
+    color: #DAA520; /*Define cor da fonte*/
+    border: 2px solid #DAA520; /*define uma borda laranja*/
     display: inline-block;/*para permitir containers lado a lado*/
     border-radius: 50%; /*Arredonda as bordas*/
     height: 55px;/*Define altura*/
